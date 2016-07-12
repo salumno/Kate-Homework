@@ -1,3 +1,4 @@
+//Взаимное расположение треугольника и точки. Точка внутри треугольника или нет?
 import java.util.Scanner;
 public class TriangleAndPoint {
 	
