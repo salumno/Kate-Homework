@@ -1,7 +1,3 @@
-/*-Точка принадлежит треугольнику или нет? 
- *-Что за вопросы вы задаете?
- *-Просто интересно.
- */
 import java.util.Scanner;
 public class TriangleAndPoint {
 	
