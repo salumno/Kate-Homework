@@ -9,7 +9,7 @@ public class CountOfWords {
 		String ourString = currentString.concat(".");
 		for (int i = 0; i < ourString.length(); i++) {
 			char symbol = ourString.charAt(i);
-			if (symbol > 'A' && symbol < 'Z' || symbol > 'a' && symbol < 'z' || symbol == 'A' || symbol == 'Z' || symbol == 'a' || symbol == 'z') { //Ругается, если поставить нестрогие неравенства
+			if ((symbol >= 'A' && symbol <= 'Z') || (symbol >= 'a' && symbol <= 'z')) { 
 				k++;
 			}
 			else {
