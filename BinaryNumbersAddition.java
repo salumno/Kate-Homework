@@ -24,29 +24,27 @@ public class BinaryNumbersAddition {
 			}
 		}
 		int mod = 0;
-		int resultOfAdd;
+		int resultOfAdd = 0;
 		String sumOfNumbers = new String();
 		for (int i = lengthOfString-1; i > -1; i--) {
 			int sum = Character.getNumericValue(num1.charAt(i)) + Character.getNumericValue(num2.charAt(i)) + mod;
-			if (sum == 2) {
-				resultOfAdd = 0;
-				mod = 1;
-			}
-			else {
-				if (sum == 1) {
+			switch (sum) {
+				case 0:
+					resultOfAdd = 0;
+					mod = 0;
+					break;
+				case 1:
 					resultOfAdd = 1;
 					mod = 0;
-				}
-				else {
-					if (sum == 0) {
-						resultOfAdd = 0;
-						mod = 0;
-					}
-					else {
-						resultOfAdd = 1;
-						mod = 1;
-					}
-				}
+					break;
+				case 2:
+					resultOfAdd = 0;
+					mod = 1;
+					break;
+				case 3:
+					resultOfAdd = 1;
+					mod = 1;
+					break;
 			}
 			String digit = Integer.toString(resultOfAdd);
 			sumOfNumbers = digit.concat(sumOfNumbers);
