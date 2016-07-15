@@ -1,4 +1,4 @@
-//Не работает :(
+//Не доработана
 //Обработка текста: разрешение ввода только цифр
 import java.util.Scanner;
 public class OnlyNumbersDude {
